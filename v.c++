@@ -18,8 +18,10 @@ int main(){
     cout<<"hello algo"<<endl;  //c언어 printf같은출력함수
     vector<int> myv(5);
     vector<int>::iterator itr;  // itr이라는  vector내부에 있는 이터레이터 선언 
+    // itr 은 포인터 (주소값)
     myv.push_back(3);
     // cout<<myv[5]<<endl;
+
 
 
     return 0;

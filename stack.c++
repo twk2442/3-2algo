@@ -17,6 +17,7 @@ int main(){
     cout<<sttop<<endl;
     st.pop();
     cout<<sttop<<endl; // top을 계속 새로 정의해주지 않으면  자동업데이트 x
+    // 빅오
 
     
 

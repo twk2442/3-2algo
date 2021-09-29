@@ -1,4 +1,4 @@
-import sys
+import sys  #주사위 
 N = int(sys.stdin.readline())
 board = [list(map(int,sys.stdin.readline().split())) for _ in range(N)]
 

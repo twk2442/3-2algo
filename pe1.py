@@ -1,4 +1,5 @@
-import sys  #주사위 
+# 알고리즘 연습문제 1 주사위
+import sys  
 N = int(sys.stdin.readline())
 board = [list(map(int,sys.stdin.readline().split())) for _ in range(N)]
 

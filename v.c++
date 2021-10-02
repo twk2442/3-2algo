@@ -11,16 +11,16 @@ using namespace std;    // std=standard 표준네임스페이스를 사용하겠
 // :: 범위확인 연산자 
 
 // vector 멤버함수 예시
-// v.at(i) ,v.back() , v.begin() , v.push_back(추가할 원소);
+//   마지막 원소참조: v.back() , 첫원소 가리킴  v.begin() , 벡터 맨 뒤에다 원소 추가: v.push_back(추가할 원소);
  
 
 int main(){
-    cout<<"hello algo"<<endl;  //c언어 printf같은출력함수
+    cout<<"hello algo"<<endl;  //cout 는 c언어 printf같은출력함수
     vector<int> myv(5);
     vector<int>::iterator itr;  // itr이라는  vector내부에 있는 이터레이터 선언 
     // itr 은 포인터 (주소값)
     myv.push_back(3);
-    // cout<<myv[5]<<endl;
+    cout<<myv[5]<<endl;
 
 
 

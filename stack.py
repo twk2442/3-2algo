@@ -4,4 +4,4 @@ class Stack(list):
     push = list.append
     pop = list. pop 
 
-    def is_empty(self): 
+    def is_empty(self): ㅌㅌ

@@ -11,7 +11,7 @@ using namespace std;    // std=standard 표준네임스페이스를 사용하겠
 // :: 범위확인 연산자 
 
 // vector 멤버함수 예시
-//   마지막 원소참조: v.back() , 첫원소 가리킴  v.begin() , 벡터 맨 뒤에다 원소 추가: v.push_back(추가할 원소);
+//   마지막 원소참조: v.back() , 첫원소 가리킴  v.begin() , 벡터 맨 뒤에다 원소 추가// 크기도 1증가: v.push_back(추가할 원소);
  
 
 int main(){

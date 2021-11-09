@@ -1,26 +1,29 @@
 import sys
-sys.setrecursionlimit(10000)
 
-dx = [0,0,1,-1,1,1,-1,-1]
-dy = [1,-1,0,0,1,-1,1,-1]
+one = [-1,1,0,0,1,1,-1,-1]
+two = [0,0,-1,1,1,-1,1,-1]
 
-def dfs(x,y):
-    a[x][y] = 0
+
+def dfs(a, b):
+    graph[a][b] = -1
     for i in range(8):
-        nx,ny = x+dx[i],y+dy[i]
-        if 0<=nx<h and 0<=ny<w and a[nx][ny] == 1:
-            dfs(nx,ny)
+        if 0 <= a+one[i] < y and 0 <= b+two[i] < x:
+            if graph[a+one[i]][b+two[i]] == 1:
+                dfs(a+one[i], b+two[i])
+    return
 
-
-while True:
-    w,h = map(int,input().split())
-    if w==h==0:
+while 1:
+    x, y = map(int, sys.stdin.readline().split())
+    if x == 0 and y == 0:
         break
-    cnt = 0
-    a = [list(map(int,input().split())) for _ in range(h)]
-    for i in range(h):
-        for j in range(w):
-            if a[i][j] == 1:
-                dfs(i,j)
-                cnt += 1
-    print(cnt)
+    graph = []
+    count = 0
+    for _ in range(y):
+        line = list(map(int, sys.stdin.readline().split()))
+        graph.append(line)
+    for t in range(y):
+        for r in range(x):
+            if graph[t][r] == 1:
+                dfs(t, r)
+                count += 1
+    print(count)

@@ -5,3 +5,6 @@ for i in range(3, 10):
 for i in range(t):
     n = int(input())
     print(ott[n - 1])
+    #주석 단축키 : command + /
+     
+    
